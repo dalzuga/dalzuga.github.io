@@ -149,6 +149,14 @@ h6, .h6 {
   color: #999;
 }
 
+.sticky {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(yellow, orange);
+        padding: 5px 10px 5px 10px;
+}
+
 
 /*
  * Footer
