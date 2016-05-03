@@ -157,6 +157,10 @@ h6, .h6 {
         padding: 5px 10px 5px 10px;
 }
 
+img {
+        width: 128px;
+        height: 128px;
+}
 
 /*
  * Footer
