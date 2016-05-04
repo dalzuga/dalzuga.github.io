@@ -7,6 +7,3 @@
 [submodule "twitter-clone"]
 	path = twitter-clone
 	url = git@github.com:dalzuga/twitter_clone-DA-SS.git
-[submodule "holberton-level2-application"]
-	path = holberton-level2-application
-	url = git@github.com:dalzuga/holberton-level2-application.git
