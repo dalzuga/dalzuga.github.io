@@ -163,9 +163,11 @@ h6, .h6 {
         display: inline-block;
 }
 
-#construction {
+#construction-image {
         width: 128px;
         height: 128px;
+        margin-left: 80px;
+        margin-bottom: 20px;
 }
 
 .img-container {
