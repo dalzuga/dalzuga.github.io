@@ -1,6 +1,3 @@
-[submodule "discover-bootstrap"]
-	path = discover-bootstrap
-	url = git@github.com:dalzuga/discover-bootstrap.git
 [submodule "simple-twitter"]
 	path = simple-twitter
 	url = git@github.com:dalzuga/simple-twitter.git
