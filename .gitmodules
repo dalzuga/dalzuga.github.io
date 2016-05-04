@@ -1,0 +1,12 @@
+[submodule "discover-bootstrap"]
+	path = discover-bootstrap
+	url = https://github.com/dalzuga/discover-bootstrap.git
+[submodule "level2"]
+	path = level2
+	url = https://github.com/dalzuga/holberton-level2-application.git
+[submodule "simple-twitter"]
+	path = simple-twitter
+	url = https://github.com/dalzuga/simple-twitter.git
+[submodule "twitter-clone"]
+	path = twitter-clone
+	url = https://github.com/dalzuga/twitter_clone-DA-SS.git
