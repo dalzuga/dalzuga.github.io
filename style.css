@@ -163,9 +163,33 @@ h6, .h6 {
         display: inline-block;
 }
 
-img {
+#construction {
         width: 128px;
         height: 128px;
+}
+
+.img-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        /*align-items: center;*/
+}
+
+.img-container>div {
+        border: 3px solid black;
+        display: flex;
+        align-items: center;
+}
+
+.img-container>div>h2 {
+        padding: 0 10px 0 10px;
+}
+
+#backdrop {
+        width: 70%;
+        height: 70%;
 }
 
 /*
