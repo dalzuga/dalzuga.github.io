@@ -9,20 +9,20 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>The Hippokampos</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,87 +36,75 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="index.html">Home</a>
+          <a class="blog-nav-item" href="index.html">Home</a>
           <a class="blog-nav-item" href="blog.html">Blog</a>
-          <a class="blog-nav-item" href="github.html">Github</a>
-          <a class="blog-nav-item" href="deeplearning.html">Deep learning</a>
-          <a class="blog-nav-item" href="frontend.html">Front-end Projects</a>
+          <a class="blog-nav-item active" href="#">Github</a>
+          <div role="presentation" class="dropdown">
+            <a class="dropdown-toggle blog-nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    Deep Learning</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Coming soon!</a></li>
+            </ul>
+          </div>
+          <div role="presentation" class="dropdown">
+            <a class="dropdown-toggle blog-nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    Meetups</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Coming soon!</a></li>
+            </ul>
+          </div>
+          <div role="presentation" class="dropdown">
+            <a class="dropdown-toggle blog-nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    Front-end Projects <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="level2/">Level 2</a></li>
+              <li><a href="http://158.69.92.190/loginform.php">Simple Twitter</a></li>
+              <li><a href="discover-bootstrap/">Discover Bootstrap</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="twitter-clone/">Team Project with Sravanthi Sinha</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
 
     <div class="container">
-
       <div class="blog-header">
         <h1 class="blog-title">The Hippokampos</h1>
         <p class="lead blog-description">From the Greek ἱππόκαμπος, "seahorse" from ἵππος hippos, "horse" and κάμπος kampos, "sea monster."</p>
       </div>
 
       <div class="row">
-
         <div class="col-sm-8 blog-main">
           <div class="blog-post">
-            <h2 class="blog-post-title">Under Construction... <img src="under_construction.png" alt="Under construction"></h2>
+            <h2 class="blog-post-title">Project Repositories</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/dalzuga/simple_shell">Simple Shell</a> - This is a C project with <a href="https://github.com/bennettbuchanan/simple_shell">Bennett Buchanan</a>.
+              </li>
+              <li>
+                <a href="https://github.com/dalzuga/dalzuga.github.io">dalzuga.github.io</a> - This is this website's repository.
+              </li>
+            </ul>
           </div>
+          <div class="img-container">
+						<img id="backdrop" src="holbertonbackdrop.gif" alt="Holberton Background Image">
+            <div>
+              <h2><a href="https://github.com/dalzuga?tab=repositories">Repo list</a></h2>
+            </div>
+	        </div><!-- /.img-container -->
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          </div><!-- /.blog-post -->
-
+            <h2 class="blog-post-title">Under Construction... <img id="construction-image" src="under_construction.png" alt="Under construction"></h2>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" style="width: 19%;">
+                19%
+              </div>
+            </div>
+            <label for="progress-bar">Track my progress <a href="https://github.com/dalzuga/dalzuga.github.io">here.</a> You can check the wireframe <a href="wireframe.png">here.</a></label>
+          </div>
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -169,9 +157,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="/dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- JS for this project -->
+    <script src="dist/js/custom.js"></script>
   </body>
 </html>
