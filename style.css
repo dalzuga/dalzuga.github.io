@@ -170,28 +170,24 @@ h6, .h6 {
         margin-bottom: 20px;
 }
 
+.postit-img-container {
+        margin-bottom: 20px;
+}
+
 .img-container {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
-        justify-content: space-between;
-        /*align-items: center;*/
+        /*border: 1px solid green;*/
 }
 
-.img-container>div {
+.postit {
+        text-align: center;
+        /*border: 1px solid red;*/
         border: 3px solid black;
-        display: flex;
-        align-items: center;
-}
-
-.img-container>div>h2 {
-        padding: 0 10px 0 10px;
 }
 
 #backdrop {
-        width: 70%;
-        height: 70%;
+        width: 100%;
+        height: 100%;
 }
 
 /*
