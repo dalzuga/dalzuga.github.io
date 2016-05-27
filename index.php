@@ -14,5 +14,4 @@ file_put_contents($file, $contents);
 /* toggle only 1 of the following two lines */
 ob_end_flush(); // clear buffer and output contents
 // ob_end_clean(); // clear buffer and silently discard contents
-
 ?>
