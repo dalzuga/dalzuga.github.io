@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<?php
+    include 'head.phtml'
+?>
+  </head>
+
+  <body>
+<?php
+    include 'nav.phtml'
+?>
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">The Hippokampos</h1>
+        <p class="lead blog-description">From the Greek ἱππόκαμπος, "seahorse" from ἵππος hippos, "horse" and κάμπος kampos, "sea monster."</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+					<div class="postit-img-container">
+					  <div class="img-container">
+					    <img id="backdrop" src="holbertonbackdrop.gif" alt="Holberton Background Image">
+					  </div><!-- /.img-container -->
+            <div class="postit">
+              <h2>
+                <a href="http://www.slideshare.net/DanielAlzugaray/audiovideo-setup">
+                  A/V slides
+                </a>
+              </h2>
+            </div>
+					</div>
+<?php include 'progress.phtml' ?>
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<?php
+          include 'sidebar.phtml'
+?>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="sticky">Currently in BETA</div>
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+<?php
+  include 'scripts.phtml'
+?>
+  </body>
+</html>
