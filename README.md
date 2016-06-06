@@ -1,6 +1,12 @@
 # dalzuga.github.io
 
-to-do list (this is to help me in development of my site)
+Build
+-----
+
+Run the following command: `php index.php`
+
+To-Do List
+----------
 
 medium post with blog posts
 
