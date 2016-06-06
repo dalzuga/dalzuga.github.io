@@ -4,7 +4,7 @@ $t = new MyView();
 $t->friends = array(
     'Rachel', 'Monica', 'Phoebe', 'Chandler', 'Joey', 'Ross'
 );
-$t->progress = 24;
+$t->progress = 25;
 ob_start();
 $t->render('index.phtml');
 $contents = ob_get_contents();
