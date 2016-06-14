@@ -1,12 +1,11 @@
 # dalzuga.github.io
 
-Build
------
+to compile this site, run the following command:
 
-Run the following command: `php index.php`
+php index.php
 
-To-Do List
-----------
+-------------
+to-do list (this is to help me in development of my site)
 
 medium post with blog posts
 
