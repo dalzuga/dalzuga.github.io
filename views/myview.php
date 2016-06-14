@@ -15,6 +15,16 @@ class MyView {
             throw new Exception('no template file ' . $template_file . ' present in directory ' . $this->template_dir);
         }
     }
+
+    /* checks to see if it is the current page */
+    /* if it is, append "active" class name */
+    public function nav_active($str)
+    {
+      if (strcmp($str, $this->output_file) == 0) {
+        echo " active";
+      }
+    }
+
     public function __set($name, $value) {
         $this->vars[$name] = $value;
     }

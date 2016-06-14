@@ -1,9 +1,9 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="index.html">Home</a>
-          <a class="blog-nav-item" href="blog.html">Blog</a>
-          <a class="blog-nav-item" href="github.html">Github</a>
+          <a class="blog-nav-item<?php $this->nav_active("index.html") ?>" href="index.html">Home</a>
+          <a class="blog-nav-item<?php $this->nav_active("blog.html") ?>" href="blog.html">Blog</a>
+          <a class="blog-nav-item<?php $this->nav_active("github.html") ?>" href="github.html">Github</a>
           <div role="presentation" class="dropdown">
             <a class="dropdown-toggle blog-nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
               Bookmarks
