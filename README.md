@@ -2,7 +2,9 @@
 
 to compile this site, run the following command (must be done from base directory):
 
-php index.php
+`php index.php`
+
+-------------
 
 to obtain this site's custom Bootstrap CSS files, visit this link:
 
