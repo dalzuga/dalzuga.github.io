@@ -17,9 +17,9 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-8 blog-main">
+        <div class="col-xs-10 col-md-8 blog-main">
           <div class="blog-post">
-            <h2 class="blog-post-title">Message to a Younger Self: Tips on Starting a Career in Programming</h2>
+            <h2 class="blog-post-title">Message to a Younger Self</h2>
             <p class="blog-post-meta">May 9, 2016 by <a href="#">Daniel</a></p>
             <p>If I could go back in the past 10 years and send myself a message on how to start my career in programming, this is it.</p>
             <p>Today, I am 25 years old. I’ve always loved computers (Yes, you). But the barrier-to-entry to start a carrier has always seemed (will always seem,) an oversupply of information and lack of direction. If you’re lucky and work smart, you can make it to a top <a href="http://holbertonschool.com">software development program</a>; but if you don’t (and the simple math is that not everyone can get in), here are messages that will help you the most in overcoming this barrier:</p>
@@ -38,13 +38,12 @@
 
             <p>Which brings me to your Integrated Development Environment (or “IDE” for short.) The best way for you to program is to use the Emacs text editor. If you were in the future with me, you’d know that <a href="http://www.gnu.org/software/emacs/index.html">GNU has released a new Emacs website with cool videos</a> explaining its features.  But since you don’t have access to it, you can use the hotkey combination Control-h + ‘t’ from an emacs window to bring up the tutorial. The learning curve of Emacs is much easier than the Vim text editor, which I don’t yet use. And the best way for you to use Emacs is to use a Linux terminal. You may not know this, but Linux is not as scary as you think it is. It is actually free and accessible, provided you use a CLI. The best thing is to run a terminal emulator for the exercises; if you want to run performance tests, you can install an LTS linux distribution and dual-boot your PC. I know it will come as a shock to you, you Windows user, but I am using a MacBook these days. The reason is that it is the only OS that will allow me to emulate all the other OSes; and also because it has a native terminal application that supports the Linux commands.</p>
 
-            <p>My message would not be complete without some advice on time-management. Here is a good exercise on it: Leave things alone when you time is up and you have to go. And I, my friend, have to go.</p>
+            <p>My message would not be complete without some advice on time-management. Here is a good exercise: Leave things alone when you time is up and you have to go. And I... have to go.</p>
           </div><!-- /.blog-post -->
         </div><!-- /.blog-main -->
-
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 <?php
-          include 'sidebar.phtml'
+          include 'sidebar.phtml';
 ?>
         </div><!-- /.blog-sidebar -->
 
@@ -54,12 +53,9 @@
 
     <div class="sticky">Currently in BETA</div>
 
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+<?php
+    include 'footer.phtml';
+?>
 
 <?php
   include 'scripts.phtml'
