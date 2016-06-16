@@ -6,7 +6,7 @@ to compile this site, run the following command (must be done from base director
 
 -------------
 
-to obtain this site's custom Bootstrap CSS files, visit this link:
+custom Bootstrap CSS files yet to be implemented:
 
 http://getbootstrap.com/customize/?id=72ad4b281d9fbfb4d58e7183c336741f
 
