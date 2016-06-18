@@ -24,6 +24,23 @@ h6, .h6 {
  * Override Bootstrap's default container.
  */
 
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 750px;
+   }
+ }
+
 @media (min-width: 1200px) {
   .container {
     width: 970px;
@@ -49,6 +66,26 @@ h6, .h6 {
   font-weight: 500;
   color: #cdddeb;
 }
+
+@media (max-width: 414px) {
+  .blog-nav-item {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .blog-nav-item {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blog-nav-item {
+    font-size: 7px;
+  }
+}
+
+
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -82,12 +119,20 @@ h6, .h6 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 60px;
   font-weight: normal;
 }
+
+@media (max-width: 480px) {
+  .blog-title {
+    font-size: 45px;
+  }
+}
+
 .blog-description {
   font-size: 18px;
   color: #999;
