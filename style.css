@@ -186,6 +186,14 @@ h6, .h6 {
   margin-bottom: 60px;
   /*font-family: "Helvetica Neue";*/
 }
+.blog-post > p {
+  margin-bottom: 1.33999em;
+  font-family: Cambria;
+}
+
+.blog-post > ol {
+  font-family: Cambria;
+}
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 30px;
