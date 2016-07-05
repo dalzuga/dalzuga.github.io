@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<?php
+    include 'head.phtml';
+?>
+  </head>
+
+  <body>
+<?php
+    include 'nav.phtml';
+?>
+    <div class="container">
+      <div class="blog-header">
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+            <h2 class="blog-post-title">Git</h2>
+            &nbsp;
+            <ul>
+              <li>
+                <h3>How to revert a commit for just one file</h3>
+                 <p><code>git revert</code> will not handle this. You have to use <code>git checkout</code> to target a specific file. <code>git checkout</code> lets you retrieve a file in the past.</p>
+                 <p>Reference:</p>
+                 <ul>
+                   <li><a href="http://stackoverflow.com/questions/215718/reset-or-revert-a-specific-file-to-a-specific-revision-using-git">Reset or revert a specific file to a specific revision using Git? - Stack Overflow</a>.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<?php
+          include 'sidebar.phtml';
+?>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="sticky">Currently in BETA</div>
+
+<?php
+    include 'footer.phtml';
+?>
+
+<?php
+  include 'scripts.phtml';
+?>
+  </body>
+</html>
