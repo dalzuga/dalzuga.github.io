@@ -5,7 +5,7 @@ $t->friends = array(
     'Rachel', 'Monica', 'Phoebe', 'Chandler', 'Joey', 'Ross'
 );
 
-$t->progress = 31;
+$t->progress = 32;
 
 ob_start();
 // $t->name = "home";
