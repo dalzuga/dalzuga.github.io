@@ -5,7 +5,7 @@ $t->friends = array(
     'Rachel', 'Monica', 'Phoebe', 'Chandler', 'Joey', 'Ross'
 );
 
-$t->progress = 32;
+$t->progress = 33;
 
 ob_start();
 // $t->name = "home";
@@ -40,6 +40,15 @@ ob_start();
 // $t->name = "github";
 $t->output_file = 'ref.html';
 $t->render('ref.phtml');
+$contents = ob_get_contents();
+file_put_contents($t->output_file, $contents);
+
+ob_end_flush();
+
+ob_start();
+// $t->name = "github";
+$t->output_file = 'calendar.html';
+$t->render('calendar.phtml');
 $contents = ob_get_contents();
 file_put_contents($t->output_file, $contents);
 

@@ -69,19 +69,19 @@ h6, .h6 {
 
 @media (max-width: 414px) {
   .blog-nav-item {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 
 @media (max-width: 375px) {
   .blog-nav-item {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 @media (max-width: 320px) {
   .blog-nav-item {
-    font-size: 7px;
+    font-size: 5px;
   }
 }
 
