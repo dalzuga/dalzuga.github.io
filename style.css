@@ -235,6 +235,17 @@ h6, .h6 {
         /*border: 1px solid green;*/
 }
 
+.iframe-container {
+        display: flex;
+        height: 600px;
+        width: 100%;
+}
+
+iframe {
+        height: 100%;
+        width: 100%;
+}
+
 .postit {
         text-align: center;
         /*border: 1px solid red;*/
