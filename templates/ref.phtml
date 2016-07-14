@@ -77,7 +77,22 @@
                 <code>ALTER DATABASE databasename CHARACTER SET utf8 COLLATE utf8_general_ci;</code>
                  <p>Reference:</p>
                  <ul>
-                   <li><a href="http://stackoverflow.com/questions/22572558/how-to-set-character-set-database-and-collation-database-to-utf8-in-my-ini">mysql5 - How to set character_set_database and collation_database to utf8 in my.ini? - Stack Overflow - Stack Overflow</a></li>
+                   <li><a href="http://stackoverflow.com/questions/22572558/how-to-set-character-set-database-and-collation-database-to-utf8-in-my-ini">mysql5 - How to set character_set_database and collation_database to utf8 in my.ini? - Stack Overflow</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>How to delete all tables and users</h3>
+                <p>
+                  To delete all users:<br>
+                  <code><?php echo htmlspecialchars("mysql -uroot -p -e \"select User from mysql.user;\" | grep -v User | grep -v root | grep -v debian-sys-maint | gawk '{print \"drop user \" $1\";select sleep(0.1);\"}' > droppedusers.sql && cat droppedusers.sql")?></code>
+                </p>
+                <p>
+                  To delete all tables:<br>
+                  <code><?php echo htmlspecialchars("mysql -uroot -p  -e \"show databases\" | grep -v Database | grep -v mysql | grep -v information_schema | gawk '{print \"drop database \" $1\";select sleep(0.1);\"}' > droppeddatabases.sql && cat droppeddatabases.sql")?></code>
+                </p>
+                 <p>Reference:</p>
+                 <ul>
+                   <li><a href="https://rootedlabs.wordpress.com/2009/10/03/drop-all-databases-in-mysql/">Drop All Databases in MySQL | Mohinish&#039;s Blog</a></li>
                 </ul>
               </li>
               <li>
