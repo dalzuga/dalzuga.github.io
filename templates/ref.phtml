@@ -87,6 +87,10 @@
                   <code><?php echo htmlspecialchars("mysql -uroot -p -e \"select User from mysql.user;\" | grep -v User | grep -v root | grep -v debian-sys-maint | gawk '{print \"drop user \" $1\";select sleep(0.1);\"}' > droppedusers.sql && cat droppedusers.sql")?></code>
                 </p>
                 <p>
+                  After deleting users:
+                  <code>FLUSH PRIVILEGES;</code>
+                </p>
+                <p>
                   To delete all tables:<br>
                   <code><?php echo htmlspecialchars("mysql -uroot -p  -e \"show databases\" | grep -v Database | grep -v mysql | grep -v information_schema | gawk '{print \"drop database \" $1\";select sleep(0.1);\"}' > droppeddatabases.sql && cat droppeddatabases.sql")?></code>
                 </p>
@@ -97,11 +101,8 @@
               </li>
               <li>
                 <h3>ERROR 1396 (HY000): Operation DROP USER failed</h3>
-                <code>delete from mysql.user</code>
-                <code>where user='<?php echo htmlspecialchars('<your-user>')?>'</code>
-                <code>and host = 'localhost';</code>
 
-                <code>flush privileges;</code>
+                <code>FLUSH PRIVILEGES;</code>
                  <p>Reference:</p>
                  <ul>
                    <li><a href="http://stackoverflow.com/questions/20698335/error-1396-hy000-operation-drop-user-failed-for-userlocalhost">mysql5 - ERROR 1396 (HY000): Operation DROP USER failed for 'user'@'localhost' - Stack Overflow - Stack Overflow</a></li>
