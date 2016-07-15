@@ -129,11 +129,11 @@
                 <h3>How to delete all tables and users</h3>
                 <p>
                   To delete all users:<br>
-                  <code>mysql -uroot -p -e &quot;select User from mysql.user;&quot; | grep -v User | grep -v root | grep -v debian-sys-maint | gawk '{print &quot;drop user &quot; $1&quot;;select sleep(0.1);&quot;}' &gt; droppedusers.sql &amp;&amp; cat droppedusers.sql</code>
+                  <code>mysql -uroot -p -e &quot;select User,Host from mysql.user;&quot; | grep -v User | grep -v root | grep -v debian-sys-maint | gawk '{print &quot;drop user &quot; $1&quot;@&quot;$2&quot;;select sleep(0.1);&quot;}'</code>
                 </p>
                 <p>
                   To delete all tables:<br>
-                  <code>mysql -uroot -p  -e &quot;show databases&quot; | grep -v Database | grep -v mysql | grep -v information_schema | gawk '{print &quot;drop database &quot; $1&quot;;select sleep(0.1);&quot;}' &gt; droppeddatabases.sql &amp;&amp; cat droppeddatabases.sql</code>
+                  <code>mysql -uroot -p  -e &quot;show databases&quot; | grep -v Database | grep -v mysql | grep -v information_schema | gawk '{print &quot;drop database &quot; $1&quot;;select sleep(0.1);&quot;}'</code>
                 </p>
                 <p>
                   Don't forget to <code>FLUSH PRIVILEGES;</code>
@@ -141,14 +141,6 @@
                  <p>Reference:</p>
                  <ul>
                    <li><a href="https://rootedlabs.wordpress.com/2009/10/03/drop-all-databases-in-mysql/">Drop All Databases in MySQL | Mohinish&#039;s Blog</a></li>
-                </ul>
-              </li>
-              <li>
-                <h3>ERROR 1396 (HY000): Operation DROP USER failed</h3>
-                <p>You have to delete manually. See reference link below.</p>
-                 <p>Reference:</p>
-                 <ul>
-                   <li><a href="http://stackoverflow.com/questions/20698335/error-1396-hy000-operation-drop-user-failed-for-userlocalhost">mysql5 - ERROR 1396 (HY000): Operation DROP USER failed for 'user'@'localhost' - Stack Overflow - Stack Overflow</a></li>
                 </ul>
               </li>
             </ul>
