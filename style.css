@@ -5,7 +5,7 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
-  background: #f3f3f3;
+  background: #fafafa;
 }
 
 h1, .h1,
@@ -193,7 +193,7 @@ h6, .h6 {
 
 .blog-post {
   margin-bottom: 60px;
-  border: 1px dashed grey;
+  border: 1px solid lightgrey;
   padding: 20px 20px 20px 20px;
   background: white;
   /*font-family: "Helvetica Neue";*/
@@ -266,7 +266,7 @@ iframe {
 .postit {
         text-align: center;
         /*border: 1px solid red;*/
-        border: 3px solid black;
+        border: 2px solid black;
         padding-top: 5px;
         background: white;
 }
