@@ -68,6 +68,12 @@ h6, .h6 {
   color: #cdddeb;
 }
 
+@media (max-width: 768px) {
+  .blog-nav-item {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 414px) {
   .blog-nav-item {
     font-size: 9px;
