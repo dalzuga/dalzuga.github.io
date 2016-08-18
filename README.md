@@ -14,16 +14,16 @@ http://getbootstrap.com/customize/?id=72ad4b281d9fbfb4d58e7183c336741f
 
 ###To-Do's
 
-Add Medium post feed
+* Add Medium post feed
 
-Add more projects Github page and their descriptions
+* Add more projects Github page and their descriptions
 
-Re-test Media Queries for blog
+* Re-test Media Queries for blog
 
-Incorporate AJAX requests for progress bar + blog posts
+* Incorporate AJAX requests for progress bar + blog posts
 
-Enable a custom theme picker for the site
+* Enable a custom theme picker for the site
 
-Add a Twitter feed
+* Add a Twitter feed
 
-Add Meetups page
+* Add Meetups page
