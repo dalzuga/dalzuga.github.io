@@ -4,13 +4,13 @@ to compile this site, run the following command (must be done from base director
 
 `php index.php`
 
--------------
-
+---
 custom Bootstrap CSS files yet to be implemented:
 
 http://getbootstrap.com/customize/?id=72ad4b281d9fbfb4d58e7183c336741f
 
--------------
+---
+
 ###To-Do's
 
 Add Medium post feed
