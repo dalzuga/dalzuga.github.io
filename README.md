@@ -11,18 +11,18 @@ custom Bootstrap CSS files yet to be implemented:
 http://getbootstrap.com/customize/?id=72ad4b281d9fbfb4d58e7183c336741f
 
 -------------
-to-do list (this is to help me in development of my site)
+###To-Do's
 
-medium post with blog posts
+Add Medium post feed
 
-do github page
+Enhance Github page
 
-fix media query’s (nav-bar)
+Re-test Media Queries for blog
 
-do AJAX request for progress bar
+Incorporate AJAX requests for progress bar + blog posts
 
-custom themes for the website
+Enable a custom theme picker for the site
 
-tweets
+Add a twitter feed
 
 meetups
