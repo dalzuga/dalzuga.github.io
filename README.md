@@ -23,6 +23,6 @@ Incorporate AJAX requests for progress bar + blog posts
 
 Enable a custom theme picker for the site
 
-Add a twitter feed
+Add a Twitter feed
 
-meetups
+Add Meetups page
