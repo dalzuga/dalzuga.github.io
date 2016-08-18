@@ -16,7 +16,7 @@ http://getbootstrap.com/customize/?id=72ad4b281d9fbfb4d58e7183c336741f
 
 Add Medium post feed
 
-Enhance Github page
+Add more projects Github page and their descriptions
 
 Re-test Media Queries for blog
 
