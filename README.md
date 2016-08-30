@@ -4,25 +4,26 @@ to compile this site, run the following command (must be done from base director
 
 `php index.php`
 
--------------
+---
 
 custom Bootstrap CSS files yet to be implemented:
 
 http://getbootstrap.com/customize/?id=72ad4b281d9fbfb4d58e7183c336741f
 
--------------
-to-do list (this is to help me in development of my site)
+---
 
-medium post with blog posts
+###To-Do's
 
-do github page
+* Add Medium post feed
 
-fix media query’s (nav-bar)
+* Add more projects Github page and their descriptions
 
-do AJAX request for progress bar
+* Re-test Media Queries for blog
 
-custom themes for the website
+* Incorporate AJAX requests for progress bar + blog posts
 
-tweets
+* Enable a custom theme picker for the site
 
-meetups
+* Add a Twitter feed
+
+* Add Meetups page
