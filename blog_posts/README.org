@@ -1,3 +1,5 @@
+#+STARTUP: showall
+
 * Blog posts go here
-  - Filenames are according to this format:
+  - Files should be named according to this format (bash):
     `$(date "+%Y-%M-%d %T %z")`
