@@ -5,16 +5,20 @@
 
 Outline:
 
-* The exercise
+* The Exercise
   By using this cron log:
   https://s3.amazonaws.com/holbertonintranet/files/sandbox/cron
 
   Please provide the list of all cron commands with the delay ("The
   cron task 'Holberton' is executed each 50 seconds")
-* Clarifying questions
+* Assumption
   Since we are in interview prep mode, we have generally considered it
   a good idea to ask as many clarifying questions from the get-go.
 
   I didn't actually ask this question. But I consider it important to
-  understand the assumptions that I am making.  did keep it as a big
-  asterisk on my solution:
+  understand the assumptions that I am making.
+* Almost correct solution
+
+* Minor mistake corrected
+
+* Extensions
