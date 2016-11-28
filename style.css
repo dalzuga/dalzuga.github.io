@@ -94,20 +94,20 @@ h6, .h6 {
   position: relative;
   display: inline-block;
   padding: 10px;
-  font-weight: 500;
-  color: #63a52a;
+  color: #9fff00;
 }
 
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #90D355;
+  color: #DEFFFD;
   text-decoration: underline;
 }
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
-  color: #7F8100;
+  color: #f1ff00;
 }
+
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -121,7 +121,6 @@ h6, .h6 {
   border-bottom: 5px solid;
   border-left: 5px solid transparent;
 }
-
 
 /*
  * Blog name and description
