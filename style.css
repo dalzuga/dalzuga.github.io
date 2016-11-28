@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
   background: #EBEBEB;
 }
@@ -15,7 +15,6 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -98,8 +97,6 @@ h6, .h6 {
   font-weight: 500;
   color: #63a52a;
 }
-
-
 
 .blog-nav-item:hover,
 .blog-nav-item:focus {
@@ -206,20 +203,23 @@ h6, .h6 {
   border: 1px solid rgb(236, 236, 236);
   padding: 20px 20px 20px 20px;
   background: white;
-  /*font-family: "Helvetica Neue";*/
 }
-.blog-post > p {
+
+.blog-post-meta {
   margin-bottom: 1.33999em;
   font-family: Palatino;
   /*color: black;*/
 }
 
+.blog-post-content > p {
+  margin-bottom: 1.33999em;
+  /*color: black;*/
+}
+
 .blog-post > ol {
-  font-family: Palatino;
   /*color: black;*/
 }
 .blog-post > ul {
-  /*font-family: Palatino;*/
   /*color: black;*/
 }
 .blog-post-title {
