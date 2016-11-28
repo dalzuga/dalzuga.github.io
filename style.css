@@ -48,14 +48,44 @@ h6, .h6 {
   }
 }
 
+/*
+ * Custom media types for Apple devices
+ */
+
+ @media (max-width: 768px) {
+   .blog-nav-item {
+     font-size: 12px;
+   }
+ }
+
+ @media (max-width: 414px) {
+   .blog-nav-item {
+     font-size: 9px;
+   }
+ }
+
+ @media (max-width: 375px) {
+   .blog-nav-item {
+     font-size: 8px;
+   }
+ }
+
+ @media (max-width: 320px) {
+   .blog-nav-item {
+     font-size: 5px;
+   }
+ }
 
 /*
  * Masthead for nav
  */
 
 .blog-masthead {
-  background-color: #003366;
+  background-color: #222222;
   font-family: Verdana;
+  font;
+  border-color: rgb(68,68,68);
+  border: 5px solid;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -66,43 +96,20 @@ h6, .h6 {
   display: inline-block;
   padding: 10px;
   font-weight: 500;
-  color: #cdddeb;
+  color: #63a52a;
 }
 
-@media (max-width: 768px) {
-  .blog-nav-item {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 414px) {
-  .blog-nav-item {
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 375px) {
-  .blog-nav-item {
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 320px) {
-  .blog-nav-item {
-    font-size: 5px;
-  }
-}
 
 
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #fff;
-  text-decoration: none;
+  color: #90D355;
+  text-decoration: underline;
 }
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
-  color: #fff;
+  color: #7F8100;
 }
 .blog-nav .active:after {
   position: absolute;
