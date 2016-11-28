@@ -2,25 +2,74 @@
 <html lang="en">
   <head>
 <?php
-    include 'head.phtml';
+    include 'head.phtml'
 ?>
   </head>
 
   <body>
 <?php
-    include 'nav.phtml';
+    include 'nav.phtml'
 ?>
     <div class="container">
       <div class="blog-header">
-
+        <h1 class="blog-title">Personal Blog</h1>
+        <p class="lead blog-description">"Blog": (a truncation of the expression weblog) is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries ("posts").</p>
       </div>
 
       <div class="row">
-        <div class="col-sm-8">
-<?php
-          include 'progress.phtml';
-?>
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+            <h2 class="blog-post-title">A Take on Autonomous Driving Ethics</h2>
+            <p class="blog-post-meta">July 3, 2016 by <a href="#">Daniel</a></p>
+            <p>Recently an article came out on <a href="http://gizmodo.com/your-self-driving-car-will-be-programmed-to-kill-you-de-1782499265">Gizmodo</a> about the ethics of self-driving cars.
+            The premise is simple: what should a self-driving car do when a crash is imminent and it can "choose" between running over two sets of people, one of which is greater in number than the other? It is analogous to the problem with the runaway trolley killing one person or five (<a href="https://en.wikipedia.org/wiki/Trolley_problem">Wikipedia</a>).</p>
+            <p>I think that presenting this problem in this way muddies the waters in what should be much more clear and precise understanding of real-life scenarios.</p>
+            <p>Our brains have a tendency to define self-driving cars as cars that are <em>fully</em> autonomous. I think this is the first key divergence between the thought experiment and reality. As long as the responsibility rests on the vehicle operator, a car cannot be considered fully autonomous. It steers itself, drives itself, etc, but requires a driver at the wheel, and also the responsibility for the rules of the road rests on the driver.</p>
+            <p>What about when cars become fully autonomous?</p>
+            <p>The <a href="http://gizmodo.com/your-self-driving-car-will-be-programmed-to-kill-you-de-1782499265">article</a> suggests that people would be apprehensive of purchasing a car like this because the vehicle might "choose" to kill them. On the other hand, a skeptic prospective buyer will probably get over this hurdle with the assurance that there is still a steering wheel, and there is still the option to take over and drive the vehicle yourself.</p>
+            <p>I think the key point is that we don't know in which direction the technology will progress. We don't know if there will always be a human operator. We don't know if there will always be a steering wheel allowing a human to take over control of the vehicle, or if there will have to be compromises, where, for example, the driver controls the accelerator and brake pedals while the car does the steering.</p>
+            <p>And if we do end up getting into the point where cars really do become completely autonomous, with responsibility or liability resting on the car manufacturer, do we assume that this ethical problem is particular only to self-driving technology?</p>
+            <p>I could argue that the same problem exists when a person controls the vehicle, and what most likely will happen when a self-driving car is faced with the trolley problem is the same exact thing that happens when a human being is faced with the same situation. They will put on the brakes as hard as they can.</p>
+          </div><!-- /.blog-post -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">Working Remotely is Hard</h2>
+            <p class="blog-post-meta">June 16, 2016 by <a href="#">Daniel</a></p>
+            <p>I don't know how the others do it. For the past few weeks, I have been working remotely, and I have noticed that it is much harder than I anticipated to get work done. It just so happened that, for a few weeks, I wouldn't have a place to stay in San Francisco.</p>
+            <p>The biggest challenge, I found, is the amount of work you miss out on. Working is not the same when you're on the go. And no matter how much you tell yourself that it won't make much of a difference, the truth is that it does make a difference.</p>
+            <p>This isn't terrible all on its own, but it means having to make arrangements. Since I am not physically at Holberton, it is harder to reach out to people, to get the quick question and answer in, to realize that the solution you are working on is much simpler if you have a fellow Hippokamper <small>[1]</small> point you to the right resource. And this is something I didn't realize. I don't notice it when I'm in the school building, but I notice it when I am not there. If you are remote you need to reach out to people constantly; this is one thing I learned.</p>
+            <p>To be fair to myself, I think that the workload has been particularly hard this week. I find that, by not spending enough time on something, that something becomes less enjoyable, and harder to learn. Specifically, over the last few weeks, there were a few big projects in different parts of the engineering stack going on at the same time. I opted out of doing the projects in Swift; I had missed a few things. I missed <a>Paulin Laroche</a> going over the slides in the mornings. Designing apps in Swift is very GUI-oriented, which would require me to spend a lot of time that I didn't have; it would have been better had I attended these slides because learning it by yourself takes considerably more time. As it became apparent to me during this mini-vacation, I had less time each day to do the work. Thus, I made an executive decision to work on the SQL databases projects. Even with the amount of time I received by availing myself of the Swift projects, I wish I could have spent a little more time on SQL. SQL had just been introduced to us; we hadn't worked with databases before. I think it would have benefited us to do a couple of inner join exercises, and also some performance exercises to know how to make high-quality code.</p>
+            <p> We had yet another project that had a massive potential to be interesting: the <code>printf</code> C project. The <code>printf</code> project consisted of coding our own clone of the famous <code>printf</code> C call, but using only <code>write</code> from the <code>unistd.h</code> library. We had to implement various features of it iteratively, with each task adding on more features. I was unable to work on it before the deadline.</p>
+            <small>[1] A Holberton Student</small>
+          </div><!-- /.blog-post -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">Message to a Younger Self</h2>
+            <p class="blog-post-meta">May 9, 2016 by <a href="#">Daniel</a></p>
+            <p>If I could go back in the past 10 years and send myself a message on how to start my career in programming, here's what it would be:</p>
+            <p>Dear young Daniel,</p>
+            <p>Today, I am writing to you from 10 years into the future. Over the next 10 years, you will always love computers. But in this world, you will find that there is a barrier-to-entry to start a career based on this thing that you love; specifically, there will always seem to be a confounding oversupply of information combined with an utter lack of direction. Hopefully, I can give you a few pointers that I had to find out the hard way. If you’re lucky and work smart, you can make it to a top <a href="http://holbertonschool.com">software development program</a>; but if you don’t (and the simple math is that not everyone can get in), here are some tips that, in my opinion, will help you the most in overcoming this barrier:</p>
+            <ol>
+              <li>Low-level programming exercises are your bread and butter.</li>
+              <li>Soft-skills are your greatest learning tool, provided you practice every day doing your low-level programming exercises</li>
+              <li>Use your own customizable IDE</li>
+              <li>Take your time; but the longer you take, the more hours you need to dedicate to programming</li>
+            </ol>
+
+            <p>Expand.</p>
+
+            <p>If you understand low-level programming, you are 25% done. One big fat (with lots of exercises) C programming book is enough. In fact, since you are actually – well – me, I know for sure that you already have that book; but since that book is hard to find online and you may have left it at your mother’s house, here is another book that you can read because your English at this time is good enough: <a href="https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628">The C Programming Language 2nd Edition ISBN-13: 978–0131103627</a>. Don’t worry, it was released in 1988 (I wouldn’t link you to a book from the future… duh). Make sure you do the exercises.</p>
+
+            <p>My next piece of professional advice: soft skills are just as important as low-level programming, if not more; the fastest way to learn is to learn from other people. At the time you receive this message, Twitter will only be 2 weeks old (I checked). Tweeting every day is the best way to start working on your soft-skills and your personal brand. As to the next best thing to practice your soft skills, dedicate your time to polish your front-end as well. Learning HTML and CSS will allow you to make your own website, which you can customize to your liking.</p>
+
+            <p>Which brings me to your Integrated Development Environment (or “IDE” for short.) The best way for you to program is to use the Emacs text editor. If you were in the future with me, you’d know that <a href="http://www.gnu.org/software/emacs/index.html">GNU has released a new Emacs website with cool videos</a> explaining its features.  But since you don’t have access to it, you can use the hotkey combination Control-h + ‘t’ from an emacs window to bring up the tutorial. The learning curve of Emacs is much easier than the Vim text editor, which I don’t yet use. And the best way for you to use Emacs is to use a Linux terminal. You may not know this, but Linux is not as scary as you think it is. It is actually free and accessible, provided you use a CLI. The best thing is to run a terminal emulator for the exercises; if you want to run performance tests, you can install an LTS linux distribution and dual-boot your PC. I know it will come as a shock to you, you Windows user, but I am using a MacBook these days. The reason is that it is the only OS that will allow me to emulate all the other OSes; and also because it has a native terminal application that supports the Linux commands.</p>
+
+            <p>My message would not be complete without some advice on time-management. Here is a good exercise: Leave things alone when time is up and you have to go. And I... have to go.</p>
+          </div><!-- /.blog-post -->
         </div><!-- /.blog-main -->
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<?php
+          //include 'sidebar.phtml';
+?>
+        </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->
 
@@ -29,7 +78,11 @@
     <div class="sticky">Currently in BETA</div>
 
 <?php
-  include 'scripts.phtml';
+    include 'footer.phtml';
+?>
+
+<?php
+  include 'scripts.phtml'
 ?>
   </body>
 </html>

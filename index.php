@@ -18,13 +18,6 @@ file_put_contents($t->output_file, $contents);
 ob_end_flush(); // clear buffer and output contents
 // ob_end_clean(); // clear buffer and silently discard contents
 
-ob_start();
-// $t->name = "blog";
-$t->output_file = 'blog.html';
-$t->render('blog.phtml');
-$contents = ob_get_contents();
-file_put_contents($t->output_file, $contents);
-
 ob_end_flush();
 
 ob_start();
