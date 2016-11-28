@@ -39,11 +39,18 @@ h6, .h6 {
    .container {
      width: 850px;
    }
+   .blog-nav-item {
+     font-size: 18px;
+   }
  }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+
+  .blog-nav-item {
+    font-size: 18px;
   }
 }
 
@@ -94,18 +101,18 @@ h6, .h6 {
   position: relative;
   display: inline-block;
   padding: 10px;
-  color: #9fff00;
+  color: white;
 }
 
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #DEFFFD;
+  color: #808080;
   text-decoration: none;
 }
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
-  color: #f1ff00;
+  color: #808080;
 }
 
 .blog-nav .active:after {
