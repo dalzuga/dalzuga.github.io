@@ -35,37 +35,37 @@ h6, .h6 {
      width: 750px;
    }
  }
- @media (min-width: 992px) {
+ @media (min-width: 970px) {
    .container {
-     width: 992px;
+     width: 850px;
    }
  }
 
 @media (min-width: 1200px) {
   .container {
-    width: 970px;
+    width: 1200px;
   }
 }
 
 /*
- * Custom media types for Apple devices
+ * Custom media types for Apple mobile devices
  */
 
  @media (max-width: 768px) {
    .blog-nav-item {
-     font-size: 12px;
+     font-size: 15px;
    }
  }
 
  @media (max-width: 414px) {
    .blog-nav-item {
-     font-size: 17px;
+     font-size: 15px;
    }
  }
 
  @media (max-width: 375px) {
    .blog-nav-item {
-     font-size: 14px;
+     font-size: 11px;
    }
  }
 
