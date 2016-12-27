@@ -318,3 +318,15 @@ iframe {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.serif {
+  font-family: 'Andada', serif;
+}
+
+.serif > h2 {
+  font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footnotes {
+    padding-top: 1.5em;
+}
