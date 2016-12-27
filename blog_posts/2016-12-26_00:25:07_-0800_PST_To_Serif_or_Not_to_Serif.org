@@ -1,3 +1,5 @@
+#+STARTUP: showall
+
 2016-12-26_00:25:07_-0800_PST
 * To Serif or Not to Serif [working title]
 
@@ -8,6 +10,7 @@ I've always thought of myself as a low-level,
 /back-end/ developer first.
 
 Front-end was scary.
+
 I had no idea how to make a great website.
 For some reason,
 my analytical mind told me that
@@ -15,7 +18,7 @@ there is no way I could leverage rules,
 with art.
 
 Rules ruin art.
-There is absolutely no way
+Surely, there is no way
 I can create a beautiful website
 with a logical, cold, calculating mind.
 At least that's what my subconscious was telling me.
