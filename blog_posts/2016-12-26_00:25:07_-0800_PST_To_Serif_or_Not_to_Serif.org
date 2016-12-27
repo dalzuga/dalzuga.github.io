@@ -55,26 +55,54 @@ than fonts with Serif.
 My second thought was to immediately try out
 a few of the most popular Sans-Serif fonts.
 I opened up the Atom editor,
-manually cycled the font-family attribute,
-and, based on a quick overview of what each font looked like,
-I settled on Verdana as the most readable,
-and permanent font for the body of the webpage.
+manually cycled the font-family attribute
+on the CSS stylesheet for my website,
+and, based on a quick overview
+of what each font looked like,
+I settled on Verdana as the most readable.
+
+Having Verdana on my site was great.
+I had maximized the readability
+of the font on my website.
+
+In the back of my mind,
+there was always this nagging feeling though,
+that my work was not yet done.
+
+Yes, I had achieved readability,
+but now I needed to add some salt and pepper.
 
 Today, I discovered a new font.
 
 In my habit of inspecting the CSS rules on different websites,
 I was inspired by an interesting article [1]
-I very randomly and [[https://twitter.com/dalzuga/status/813075516810895360][awkwardly]] stumbled upon, which used Andada.
+I randomly stumbled upon,
+which used Andada.
 What is Andada, you ask?
 
-Google has openly released a beautiful set of fonts [2] that
+Google has openly released
+a beautiful set of fonts [2] that
 anyone can use, for free.
-Though it was a Serif font,
-Andada felt surprisingly readable to me.
+Though a Serif font,
+Andada felt surprisingly readable to me,
+almost striking that perfect balance
+of readability and "pizzaz."
 As a test,
-I've decided to switch to it over the holidays.
+I've decided to style the content
+of this blog post
+in this new font,
+and see how I liked it.
 
 Happy holidays, and, enjoy Serif!
+
+** Post Scriptum
+
+When switching over
+to a Serif font,
+I noticed I had to make the font bigger
+in order to achieve consistency
+with the other posts.
+Verdana in 16 px became 18px in 'Andada'.
 
 [1] http://rhodesmill.org/brandon/2012/one-sentence-per-line/ by
 Brandon Rhodes ([[https://news.ycombinator.com/item?id%3D4642395][HN]])
