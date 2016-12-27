@@ -5,7 +5,7 @@
 
 I've had an obsession with creating the best website I could
 for quite a while now.
-But as someone who started programming with C,
+As someone who started programming with C though,
 I've always thought of myself as a low-level,
 /back-end/ developer first.
 
