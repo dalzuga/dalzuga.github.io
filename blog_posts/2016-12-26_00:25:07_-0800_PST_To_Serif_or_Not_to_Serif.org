@@ -29,7 +29,7 @@ When I discovered I could get a score on my website,
 it was on.
 Metrics was exactly what the doctor ordered.
 
-My mental breaks consisted on going on [[http://colorsafe.co][colorsafe.co]]
+My mental breaks consisted of going on [[http://colorsafe.co][colorsafe.co]]
 and trying out different combinations of color shades
 to find that perfect balance of WCAG acceptance and style.
 
