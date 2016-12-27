@@ -44,8 +44,7 @@ Every time I opened a website that I thought was readable,
 I would note the layout, colors, and what kind of fonts were used.
 Specifically, I would note the size of the font, the color,
 and the font-family.
-Being short on time,
-my previously clean desktop became littered
+My previously clean desktop became littered
 with screenshots of various websites,
 with the web inspector capturing the font details.
 
