@@ -222,7 +222,7 @@ h6, .h6 {
 }
 
 .blog-post-content > p {
-  margin-bottom: 1.33999em;
+  /*margin-bottom: 1.33999em;*/
   /*color: black;*/
 }
 
@@ -319,13 +319,13 @@ iframe {
 
 .serif {
   font-family: 'Andada', serif;
-  font-size: 20px;
-}
-
-.serif > h2 {
-  font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
 .footnotes {
+    padding-top: 1.5em;
+}
+
+.outline-3 {
     padding-top: 1.5em;
 }
