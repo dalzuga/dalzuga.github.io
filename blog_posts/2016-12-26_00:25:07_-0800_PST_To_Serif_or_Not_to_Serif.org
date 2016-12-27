@@ -98,11 +98,11 @@ Happy holidays, and, enjoy Serif!
 ** Post Scriptum
 
 When switching over
-to a Serif font,
+to a Andada font,
 I noticed I had to make the font bigger
 in order to achieve consistency
 with the other posts.
-Verdana in 16 px became 18px in 'Andada'.
+Verdana in 16 px became 18px in Andada.
 
 [1] http://rhodesmill.org/brandon/2012/one-sentence-per-line/ by
 Brandon Rhodes ([[https://news.ycombinator.com/item?id%3D4642395][HN]])
