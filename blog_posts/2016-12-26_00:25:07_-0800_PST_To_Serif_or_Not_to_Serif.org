@@ -58,7 +58,7 @@ a few of the most popular Sans-Serif fonts.
 I opened up the Atom editor,
 manually cycled the font-family attribute,
 and, based on a quick overview of what each font looked like,
-I quickly settled on Verdana as the most readable,
+I settled on Verdana as the most readable,
 and permanent font for the body of the webpage.
 
 Today, I discovered a new font.
