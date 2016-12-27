@@ -10,7 +10,6 @@ I've always thought of myself as a low-level,
 /back-end/ developer first.
 
 Front-end was scary.
-
 I had no idea how to make a great website.
 For some reason,
 my analytical mind told me that
