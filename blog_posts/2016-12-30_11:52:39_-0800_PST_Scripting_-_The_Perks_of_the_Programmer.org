@@ -1,0 +1,3 @@
+#+STARTUP: showall
+2016-12-30_11:52:39_-0800_PST
+* Scripting - The Perks of the Programmer [working title]
