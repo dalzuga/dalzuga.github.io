@@ -1,0 +1,90 @@
+2016-12-27_17:48:45_-0800_PST
+* Free Writing
+
+How can I make money sustainably?
+
+What if I pick the wrong thing?
+
+I need to email Arnaud.
+
+Put Lera first.
+
+Need to fix the spacing between the lines on my website.
+
+I need to get a [[https://www.youtube.com/watch?v%3DzaOTineGV1Q][gaming]] PC.
+
+Facebook's Mark Zuckerberg had serif font on his post.
+
+Use Google Fonts website to preview text content.
+
+I should check out Google Fonts to pick fonts.
+
+My titles need to be bigger.
+
+I think I need to change fonts for the title of my blog post. I think
+this was the key idea. Specifically, this is the idea I need to put
+into action. After this, I have to add comments to my blog. And
+separate the blog posts. Reverse those last two sentences.
+
+Proofread blog post on Serif.
+
+Change white-grey layout to pure white, add a separator between posts.
+
+[2016-12-28 Wed 11:54]
+
+Build a community for craigslist that is centered around open
+software/hardware. Pre-agreed: saving money through modular stuff.
+
+Browser switching. Open links in 'X'.
+
+- I also believe that tech community should build for two audiences:
+  - one, the tech community.
+  - two, written in such a way that
+    someone without a tech background
+    is able to understand
+
+I should try a different emacs.
+
+My website title should be bolder.
+
+I could create a better website builder. Its goal is to personify
+everyone's personal account.
+
+I need to take care of my health insurance.
+
+Also need to take care of my business.
+
+"Darken" toggle.
+
+Health care comparison chart.
+
+Accessibility cookie.
+
+Every city should have a health plan, and everyone can pay into it.
+
+Focus on quality so that branding is not a competition.
+
+What makes a plan good?
+
+Issuing awards to people.
+
+Do Linux. Code some shit.
+
+Fix mobile responsiveness sidebars on my website.
+
+Change footnote ref to not include space on the left side.
+
+idiomatic.js [[https://github.com/rwaldron/idiomatic.js][link]]
+
+Mac OS X superdeveloper mode. Dedicate some time to this.
+
+[2016-12-28 Wed 16:24]
+
+The problem with doing coding is power. Power is finite. I tend to
+think it is infinite.
+
+Installed prelude on my Mac OS X Emacs. Installed the javascript module.
+
+New private blog post: On Starting - Development for the Average New Developer.
+
+Do Salesforce right first. [2016-12-28 Wed 17:21]
