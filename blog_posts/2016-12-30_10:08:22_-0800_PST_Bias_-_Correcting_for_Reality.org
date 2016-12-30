@@ -1,3 +1,4 @@
+#+STARTUP: showall
 2016-12-30_10:08:22_-0800_PST
 * Things Bias - Correcting for Reality [working title]
 I was dropping off my girlfriend at the mall yesterday, and decided to
