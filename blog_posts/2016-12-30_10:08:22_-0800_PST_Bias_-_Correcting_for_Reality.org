@@ -1,6 +1,6 @@
 #+STARTUP: showall
 2016-12-30_10:08:22_-0800_PST
-* Things Bias - Correcting for Reality [working title]
+* "Things" bias
 I was dropping off my girlfriend at the mall yesterday, and decided to
 go into a long coding session as soon as I got home. I was in traffic,
 and Waze showed 11 minutes from my go-to pizza place. Unhealthy,
@@ -14,19 +14,22 @@ define bias from a higher level of abstraction.
 
 I treat biases very seriously. I thought: what about biases that we
 are unaware of? Could we systematically and exhaustively eliminate or
-correct for them.
+correct for them?
 
-I had run out of bread in the house and this was also on my mind. I
-could either go to Costco.
+I tried to come up with a random bias. What I came up with is, can we
+be biased just by having the things we have? Take, for example, my
+car. I entertained what would happen if I *didn't* have a car.
 
-What would I do if I didn't have a car?
+I had run out of bread in the house and this was also on my mind. How
+would I deal with this? Instead of going to Costco and getting my food
+at wholesale prices, I could go to the store which is walking distance
+and is also going to overcharge for every item. Would I adapt? Would
+I, say, find an alternative method of getting bread into the house?
 
-My takeaway is this: I want to know what would happen if I *didn't*
-use my car. So for the next two weeks, I'm going to try to see what
-would happen if I got bread from the only store in walking distance
-that rips you off. Would I be getting ripped off?
+Perhaps this is not very interesting.
 
-But more importantly, my work isn't done. What kinds of other "things"
-biases could I have?
+I think the reason I wanted to write this blog post is this: Could
+having "things" affect the way we view the world, and how so?
 
---THE END--
+I wanted to make it clear to myself that we could be biased by the
+very objects that surround us.
