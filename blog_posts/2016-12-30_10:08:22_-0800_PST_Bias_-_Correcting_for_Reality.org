@@ -1,12 +1,13 @@
 #+STARTUP: showall
 2016-12-30_10:08:22_-0800_PST
-* "Things" bias
-I was dropping off my girlfriend at the mall yesterday, and decided to
-go into a long coding session as soon as I got home. I was in traffic,
-and Waze showed 11 minutes from my go-to pizza place. Unhealthy,
-pre-cooked, and quickly rewarmed. A hacker's dream. I called ahead,
-ordered, picked it up, and on the drive back I was thinking about
-something I read in /Rationality: From AI to Zombies/.
+* "Things" Bias
+Two days ago, I was dropping off my girlfriend at the mall. I decided
+that when I got back home I would go into a long coding session. I was
+in traffic, and Waze showed 11 minutes from my go-to pizza
+place. Unhealthy, pre-cooked, and quickly rewarmed. A hacker's
+dream. I called ahead, ordered, picked it up, and on the drive back I
+was thinking about something I read in /Rationality: From AI to
+Zombies/.
 
 This book talks about /bias/, and it really struck a chord with me to
 entertain Yudkowsky's ideas seriously. I liked how he attempted to
