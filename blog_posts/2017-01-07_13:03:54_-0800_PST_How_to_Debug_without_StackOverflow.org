@@ -1,0 +1,88 @@
+#+STARTUP: showall
+2017-01-07_13:03:54_-0800_PST
+* How to Debug without StackOverflow [working title]
+
+So here's an example of something I almost posted on StackOverflow
+because I was almost ready to give up.
+
+I'm trying to do concurrency for the first time and I'm using Go by
+Example pages on concurrency.
+
+My code snippet was like this:
+
+#+BEGIN_SRC go
+
+/* Make a map of channels, 1 channel per page */
+channels := make(map[int](chan map[int]string))
+
+for more > 0 {
+	page++
+	more--
+	moreTitles, _, err = requestPage(page, AuthorID, endpointBase)
+	if err != nil {
+		return make(map[int]string), err
+	}
+
+	i := len(mapTitles)
+	for _, value := range moreTitles {
+		mapTitles[i] = value
+		i++
+	}
+}
+
+#+END_SRC
+
+Whenever I ran this code through the terminal. It would hang:
+
+#+BEGIN_SRC shell
+$ go_parser 4
+4
+https://www.goodreads.com/author/list.xml?id=4&key=<key redacted>&page=1
+There are more books in the API.
+Additional requests needed: 2
+For loop. i = 2
+Go func. i = 2
+https://www.goodreads.com/author/list.xml?id=4&key=<key redacted>&page=2
+2017/01/07 11:22:12 Received: page 2
+^C
+$
+#+END_SRC
+
+Eventually I figured out what was going on, and here's how I did it.
+
+First, a simple example. I got out of the ~for~ loop:
+
+#+BEGIN_SRC go
+i := 2
+// channelMaps := make(chan map[int]string)
+fmt.Println("For loop. i =", i)
+go func(i int) {
+	fmt.Println("Go func. i =", i)
+	moreTitles, _, err := requestPage(i, AuthorID, endpointBase)
+	if err != nil {
+		fmt.Println("This request failed:", i)
+		channels[i] <- make(map[int]string)
+	} else {
+		fmt.Println("Received: page", i)
+		fmt.Println("111")
+		channels[i] <- moreTitles
+		fmt.Println("222")
+	}
+}(i)
+	i = 3
+// channelMaps := make(chan map[int]string)
+fmt.Println("For loop. i =", i)
+go func(i int) {
+	fmt.Println("Go func. i =", i)
+	moreTitles, _, err := requestPage(i, AuthorID, endpointBase)
+	if err != nil {
+		fmt.Println("This request failed:", i)
+		channels[i] <- make(map[int]string)
+	} else {
+		fmt.Println("Received: page", i)
+		fmt.Println("333")
+		channels[i] <- moreTitles
+		fmt.Println("444")
+	}
+}(i)
+#+END_SRC
