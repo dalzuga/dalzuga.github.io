@@ -3,7 +3,7 @@
 * How to Debug without StackOverflow [working title]
 
 So here's an example of something I almost posted on StackOverflow
-because I was almost ready to give up.
+because I was ready to give up.
 
 I'm trying to do concurrency for the first time and I'm using Go by
 Example pages on concurrency.
@@ -48,7 +48,8 @@ https://www.goodreads.com/author/list.xml?id=4&key=<key redacted>&page=2
 $
 #+END_SRC
 
-Eventually I figured out what was going on, and here's how I did it.
+Eventually I figured out what was going on. But the interesting part
+is not the what. It's the how.
 
 First, a simple example. I got out of the ~for~ loop:
 
@@ -86,3 +87,37 @@ go func(i int) {
 	}
 }(i)
 #+END_SRC
+
+I ran this code and the behavior differed. Something is different in the way I did the ~for~ loop.
+
+I then tried this:
+
+#+BEGIN_SRC go
+
+	channel2 := make(chan map[int]string)
+	i := 2
+	// channelMaps := make(chan map[int]string)
+	fmt.Println("For loop. i =", i)
+	go func(i int) {
+		fmt.Println("Go func. i =", i)
+		moreTitles, _, err := requestPage(i, AuthorID, endpointBase)
+		if err != nil {
+			fmt.Println("This request failed:", i)
+			channel2 <- make(map[int]string)
+		} else {
+			fmt.Println("Received: page", i)
+			fmt.Println("111")
+			channel2 <- moreTitles
+			fmt.Println("222")
+		}
+	}(i)
+
+	fmt.Println("555. more:", more)
+
+	someMap := <-channel2
+	fmt.Println(someMap)
+	fmt.Println("Receiving channel:", i)
+
+#+END_SRC
+
+and it worked!
