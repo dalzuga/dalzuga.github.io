@@ -1,0 +1,9 @@
+#+STARTUP: showall
+2017-01-11_19:12:15_-0800_PST
+* Custom Struct Tags in Golang [working title]
+
+[[file:images/Screen Shot 2017-01-11 at 6.59.28 PM.png][Image 1]]
+
+[[file:images/Screen Shot 2017-01-11 at 7.08.56 PM.png][Image 2]]
+
+[[file:images/Screen Shot 2017-01-11 at 7.10.46 PM.png][Image 3]]
