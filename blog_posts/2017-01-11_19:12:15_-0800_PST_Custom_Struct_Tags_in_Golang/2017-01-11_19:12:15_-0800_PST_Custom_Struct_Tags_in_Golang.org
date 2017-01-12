@@ -2,8 +2,59 @@
 2017-01-11_19:12:15_-0800_PST
 * Custom Struct Tags in Golang [working title]
 
-[[file:images/Screen Shot 2017-01-11 at 6.59.28 PM.png][Image 1]]
+I was playing with struct values to parse an XML file.
 
-[[file:images/Screen Shot 2017-01-11 at 7.08.56 PM.png][Image 2]]
+[[insert%20structs.go%20at%20v0.3][insert code for structs.go at v0.3]]
 
-[[file:images/Screen Shot 2017-01-11 at 7.10.46 PM.png][Image 3]]
+I tried to do something along the lines of Image 2:
+
+Image 2:
+#+ATTR_HTML: :width 800px
+#+ATTR_ORG: :width 800px
+[[file:images/Screen Shot 2017-01-11 at 7.08.56 PM.png]]
+
+Upon trying this, gometalinter gave me an error:
+
+#+ATTR_HTML: :width 1000px
+#+ATTR_ORG: :width 1000px
+[[file:images/Screen Shot 2017-01-11 at 7.32.25 PM.png]]
+
+I couldn't do it. This is not allowed. I googled around a bit, but
+found nothing indicating this could be done. This approach was not
+going to be an easy path to getting the outcome that I wanted.
+
+On the other hand, I did discover this:
+
+Image 3:
+#+ATTR_HTML: :width 750px
+#+ATTR_ORG: :width 750px
+[[file:images/Screen Shot 2017-01-11 at 7.10.46 PM.png]]
+
+Loading this snippet on Golang Play:
+
+Image 1:
+#+ATTR_HTML: :width 800px
+#+ATTR_ORG: :width 1000px
+[[file:images/Screen Shot 2017-01-11 at 6.59.28 PM.png]]
+
+At the time I saw this example, I started to look at my problem in
+another way.
+
+If I wanted to parse an XML file in the general case, I don't really
+need to worry about the names of the fields. With the NumField()
+method on the ~reflect.Value~, I can iterate over all the struct
+elements. I can simply use an array.
+
+I have function getAuthorID at commit
+be2a8c806936140611139cd9fafc609ac397d334 (daniel/work branch):
+
+#+ATTR_HTML: :width 800px
+#+ATTR_ORG: :width 1000px
+[[file:images/Screen Shot 2017-01-11 at 8.11.25 PM.png]]
+
+which relies on the following structs in HEAD^^ commit:
+
+#+ATTR_HTML: :width 800px
+#+ATTR_ORG: :width 1000px
+[[file:images/Screen Shot 2017-01-11 at 9.35.07 PM.png]]
+
