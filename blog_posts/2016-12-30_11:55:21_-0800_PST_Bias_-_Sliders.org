@@ -1,3 +1,0 @@
-#+STARTUP: showall
-2016-12-30_11:55:21_-0800_PST
-* Bias - Sliders [working title]
