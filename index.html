@@ -64,54 +64,31 @@
       <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 row">
         <div class="blog-main">
           <div class="blog-post">
-            <h2 class="blog-post-title">"Things" Bias</h2>
-            <p class="blog-post-meta">December 30, 2016</p>
+            <h2 class="blog-post-title">Safari Search History</h2>
+            <p class="blog-post-meta">January 29, 2017 by <a href="#">Daniel</a></p>
             <div class="blog-post-content serif">
               <p>
-              I was dropping off my girlfriend at the mall yesterday. I decided that
-              when I got back home I would go into a long coding session. I was in
-              traffic, and Waze showed 11 minutes from my go-to pizza
-              place. Pizza&#x2026; Unhealthy, pre-cooked, and quickly rewarmed. A
-              hacker's dream. I called ahead, ordered, picked it up, and on the
-              drive back I was thinking about something I read in <i>Rationality: From
-              AI to Zombies</i> by Eliezer Yudkowsky.
+              If you are on OS X and rely on your Safari history as much as I do,
+              you may have encountered a pesky Safari property: while the pages you
+              visit remain in your history, your search engine searches from the URL
+              bar will not be recorded. In other words, any searches done from
+              inside the text box on the Google homepage will show up on your search
+              history, but if you search from the URL bar, it will not show up in
+              your history (as of Safari Version 10.0.2).
               </p>
 
               <p>
-              This book talks about <i>bias</i>, and it really struck a chord with me to
-              entertain Yudkowsky's ideas seriously. I liked how he attempted to
-              define bias from a higher level of abstraction.
+              To get around that, just type,
               </p>
 
               <p>
-              I treat biases very seriously. I thought: what about biases that we
-              are unaware of? Could we systematically and exhaustively eliminate or
-              correct for them?
+              <code>defaults find searchstring</code>
               </p>
 
               <p>
-              I tried to come up with a random bias. What I came up with is, can we
-              be biased just by having the things we have? Take, for example, my
-              car. I entertained what would happen if I <b>didn't</b> have a car.
-              </p>
-
-              <p>
-              I had run out of bread in the house and this was also on my mind. How
-              would I deal with this? Instead of going to Costco and getting my food
-              at wholesale prices, I could go to the store which is walking distance
-              and is also going to overcharge for every item. Would I adapt? Would
-              I, say, find an alternative method of getting bread into the house?
-              </p>
-
-              <p>
-              I think the reason I wanted to write this blog post is this: Could
-              having "things" affect the way we view the world?
-              </p>
-
-              <p>
-              I think that we could be biased by the very objects that surround us,
-              and by what we have. We could be biased by the reality that we live
-              in. And we need to account for that.
+              into your terminal, and you should see your recent search results on
+              Safari. For more information about how <code>defaults</code> works, read the
+              <code>man</code>! (type <code>man defaults</code> into your terminal.)
               </p>
             </div>
           </div>
