@@ -1,0 +1,56 @@
+#+STARTUP: showall
+2017-10-05_10:42:12_-0700_PDT
+* effective ps usage [working title]
+
+I'm currently running a program -- a.out -- that simply prints a string to
+standard out every second. It's been running for approximately 13 hours.
+
+I want to be able to get the process ID (or PID) of the process. For that I am
+using ~ps(1)~.
+
+#+BEGIN_EXAMPLE
+daniel@ubuntu:~$ ps -e | grep a.out
+  5306 pts/0    00:00:03 a.out
+daniel@ubuntu:~$
+#+END_EXAMPLE
+
+The default behavior for ~ps -e~ is a bit confusing. If we follow the man page,
+we come to a snippet that says:
+
+#+BEGIN_EXAMPLE
+For example, the normal default output can be produced with this: ps -eo "%p %y %x %c".
+#+END_EXAMPLE
+
+#+BEGIN_QUOTE
+daniel@ubuntu:~$ ps -eo "%p %y %x %c" | grep a.out
+  5306 pts/0    00:00:03 a.out
+daniel@ubuntu:~$
+#+END_QUOTE
+
+If we look at the table following the man page snippet, we can come up with another way of running the command.
+
+#+BEGIN_EXAMPLE
+daniel@ubuntu:~$ ps -eo pid,tty,time,comm | grep a.out
+  5306 pts/0    00:00:03 a.out
+daniel@ubuntu:~$
+#+END_EXAMPLE
+
+(Acknowledgment:
+http://linuxcommando.blogspot.com/2008/09/how-to-get-process-start-date-and-time.html)
+
+However, it seems that my process has been running for 13 hours, let alone 3
+seconds, so I'm experiencing a bit of cognitive dissonance. 'time' does not
+seem to be the parameter that I want.
+
+If we want the wall clock time for how long the process has been running, we
+want the 'etime' to be displayed.
+
+#+BEGIN_EXAMPLE
+daniel@ubuntu:~$ ps -eo pid,tty,time,etime,comm | grep a.out                    
+  5306 pts/0    00:00:03    13:21:56 a.out
+daniel@ubuntu:~$
+#+END_EXAMPLE
+
+It appears that 'time' simply counts the time in which the CPU is working on
+this program. Since my program is sleeping most of the time, it's very likely
+that it will take another 6 hours for it to get to 4 seconds of CPU time.
