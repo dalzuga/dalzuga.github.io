@@ -64,6 +64,82 @@
       <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 row">
         <div class="blog-main">
           <div class="blog-post">
+            <h2 class="blog-post-title">Using <code>ps(1)</code> to Check Elapsed Time </h2>
+            <p class="blog-post-meta">October 5, 2017 by <a href="#">Daniel</a></p>
+            <div class="blog-post-content serif">
+              <p>
+              I'm currently running a program &#x2013; a.out &#x2013; that simply prints a string to
+              standard out every second. It's been running for approximately 13 hours.
+              </p>
+
+              <p>
+              I want to be able to get the process ID (or PID) of the process. For that I am
+              using <code>ps(1)</code>.
+              </p>
+
+              <pre class="example">
+              daniel@ubuntu:~$ ps -e | grep a.out
+                5306 pts/0    00:00:03 a.out
+              daniel@ubuntu:~$
+              </pre>
+
+              <p>
+              The default behavior for <code>ps -e</code> is a bit confusing. If we follow the man page,
+              we come to a snippet that says:
+              </p>
+
+              <pre class="example">
+              For example, the normal default output can be produced with this: ps -eo "%p %y %x %c".
+              </pre>
+
+              <blockquote>
+              <p>
+              daniel@ubuntu:~$ ps -eo "%p %y %x %c" | grep a.out
+                5306 pts/0    00:00:03 a.out
+              daniel@ubuntu:~$
+              </p>
+              </blockquote>
+
+              <p>
+              If we look at the table following the man page snippet, we can come up with another way of running the command.
+              </p>
+
+              <pre class="example">
+              daniel@ubuntu:~$ ps -eo pid,tty,time,comm | grep a.out
+                5306 pts/0    00:00:03 a.out
+              daniel@ubuntu:~$
+              </pre>
+
+              <p>
+              (Acknowledgment:
+              <a href="http://linuxcommando.blogspot.com/2008/09/how-to-get-process-start-date-and-time.html">http://linuxcommando.blogspot.com/2008/09/how-to-get-process-start-date-and-time.html</a>)
+              </p>
+
+              <p>
+              However, it seems that my process has been running for 13 hours, let alone 3
+              seconds, so I'm experiencing a bit of cognitive dissonance. 'time' does not
+              seem to be the parameter that I want.
+              </p>
+
+              <p>
+              If we want the wall clock time for how long the process has been running, we
+              want the 'etime' to be displayed.
+              </p>
+
+              <pre class="example">
+              daniel@ubuntu:~$ ps -eo pid,tty,time,etime,comm | grep a.out
+                5306 pts/0    00:00:03    13:21:56 a.out
+              daniel@ubuntu:~$
+              </pre>
+
+              <p>
+              It appears that 'time' simply counts the time in which the CPU is working on
+              this program. Since my program is sleeping most of the time, it's very likely
+              that it will take another 6 hours for it to get to 4 seconds of CPU time.
+              </p>
+            </div>
+          </div>
+          <div class="blog-post">
             <h2 class="blog-post-title">Using the Terminal For Your Safari Search History</h2>
             <p class="blog-post-meta">January 29, 2017 by <a href="#">Daniel</a></p>
             <div class="blog-post-content serif">
